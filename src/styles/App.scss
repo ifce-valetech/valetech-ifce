@@ -1,0 +1,176 @@
+// ======= Variáveis =======
+$cor-primaria: #773df9;
+$cor-secundaria: #1a162a;
+$cor-clara: #f2f2f2;
+
+// ======= Reset =======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background-image: linear-gradient(to top, $cor-secundaria, $cor-primaria);
+  background-attachment: fixed; // opcional: gradiente fixo
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+}
+
+// ======= NAVBAR =======
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  transition: .5s;
+  background-image: linear-gradient(to bottom, $cor-secundaria, $cor-primaria, transparent);
+  z-index: 10;
+
+  .logo {
+    img {
+      margin: 10px;
+      width: 100px;
+    }
+  }
+
+  ul {
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    li {
+      display: inline;
+    }
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $cor-secundaria;
+    transition: .5s;
+
+    &:hover {
+      color: $cor-clara;
+    }
+  }
+}
+
+// ======= MAIN =======
+main {
+  position: relative;
+  width: 100%;
+  flex: 1; // ocupa espaço restante
+  background-color: $cor-clara;
+  box-shadow: inset 0 0 100px $cor-secundaria;
+}
+
+// ======= SECTIONS =======
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px;
+
+  img {
+    width: 20vw;
+    margin: 50px 10vw;
+  }
+
+  .texto {
+    position: inherit;
+    display: block;
+    min-width: 100px;
+    width: 40vw;
+    z-index: 1;
+    font-size: 1.2vw;
+    text-shadow: 3px 3px 3px $cor-primaria;
+
+    h1 {
+      font-size: clamp(10px, 3vw, 50px);
+    }
+
+    p {
+      font-size: clamp(10px, 3vw, 20px);
+      margin: 10px auto;
+    }
+  }
+}
+
+.sections {
+  background-image: linear-gradient(to bottom, $cor-secundaria, $cor-primaria);
+  position: relative;
+  z-index: 2;
+}
+
+#sectionS {
+  padding: 100px 0;
+  min-height: 50vh;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  background-image: url('/public/images/PATTERN.png');
+  opacity: .1;
+  z-index: 1;
+}
+
+// ======= FOOTER =======
+.footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $cor-primaria;
+  box-shadow:
+    inset 100px 0 100px -100px $cor-secundaria,  // esquerda
+    inset -100px 0 100px -100px $cor-secundaria, // direita
+    inset 0 -100px 100px -100px $cor-secundaria; // baixo
+  position: relative;
+  z-index: 2;
+}
+
+// ======= HELPERS =======
+.start   { display: flex; justify-content: flex-start; }
+.center  { display: flex; justify-content: center; text-align: center; }
+.end     { display: flex; justify-content: flex-end; }
+
+.color-1 { color: $cor-clara; }
+.color-2 { color: $cor-primaria; }
+.color-3 { color: $cor-secundaria; }
+
+// ======= RESPONSIVO =======
+@media screen and (max-width: 770px) {
+  nav {
+    justify-content: center;
+    position: absolute;
+
+    .logo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .item-nav {
+      display: none;
+    }
+  }
+  .section{
+    .texto{
+      font-size: 1.5vw;
+    }
+    h1{
+      font-size: 2vw;
+    }
+  }
+}
