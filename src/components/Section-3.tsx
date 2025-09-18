@@ -1,6 +1,6 @@
 function Section3() {
     return (
-        <section className="section start" id="section1">
+        <section className="section start" id="section3">
             <div className="imagem">
                 <img src="images/logo-branco.png" alt="" />
             </div>
