@@ -23,7 +23,7 @@ function Navbar() {
                         <li><a href="#section4"><strong>Entretenimento</strong></a></li>
                     </div>
                 </div>
-                <div className="item-nav-end end">
+                <div className="item-nav-end start">
                     <li><a href="#"><strong>Inscreva-se</strong></a></li>
                 </div>
                 

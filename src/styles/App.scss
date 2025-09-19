@@ -186,6 +186,7 @@ main {
       font-size: 2.6vw;
       width: 70vw;
       position: relative;
+      text-align: center;
     }
     .imagem{
         order: -1;
@@ -194,10 +195,13 @@ main {
       justify-content: center;
     }
     h1, p{  
-      white-space: unset;
       background-color: transparent;
       display: block;
       text-align: center;
+      white-space: unset;
+    }
+    p{
+      display: inline;
     }
     h1{
       text-align: center;
