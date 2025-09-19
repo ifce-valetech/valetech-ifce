@@ -23,7 +23,7 @@ nav {
     padding: 10px;
     width: 100%;
     transition: .5s;
-    background-image: linear-gradient(to bottom, #1a162a , #773df9, #00000000);
+    background-color: #773DF9;
     z-index: 10;
 }
 
@@ -89,7 +89,7 @@ main{
 }
 
 .sections{
-    background-image: linear-gradient(to bottom, #1a162a, #773df9);
+    background-image:  #773DF9;
     position: relative;
     z-index: 2;
 }

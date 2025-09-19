@@ -1,7 +1,6 @@
 // ======= Variáveis =======
-$cor-primaria: #854ffa;
+$cor-primaria: #773DF9;
 $cor-secundaria: #1a162a;
-$cor-terciaria: #3d3361;
 $cor-clara: #f2f2f2;
 $cor-clara2: #cbcaca;
 
@@ -15,7 +14,6 @@ $cor-clara2: #cbcaca;
 html, body, #root {
   height: 100%;
   margin: 0;
-  background-image: linear-gradient(to top, $cor-primaria, $cor-primaria);
   background-attachment: fixed; // opcional: gradiente fixo
   scroll-behavior: smooth;
   display: flex;
@@ -31,7 +29,7 @@ nav {
   padding: 10px;
   width: 100%;
   transition: .5s;
-  background-image: linear-gradient(to bottom, $cor-terciaria, $cor-primaria, transparent);
+  background-color: $cor-primaria;
   z-index: 10;
 
   .logo {
@@ -42,12 +40,17 @@ nav {
   }
 
   ul {
-    gap: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    .itens {
+      gap: 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
 
+    }
+    .item-nav-end{
+      width: 20vh;
+    }
     li {
       display: inline;
     }
@@ -72,7 +75,7 @@ main {
   width: 100%;
   flex: 1; // ocupa espaço restante
   background-color: $cor-clara;
-  box-shadow: inset 0 0 100px $cor-terciaria;
+  box-shadow: inset 0 0 100px $cor-primaria;
 }
 
 // ======= SECTIONS =======
@@ -80,21 +83,24 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 50px;
+  padding: 50px 200px;
 
   img {
-    width: clamp(200px, 30vw, 300px);
-    margin: 50px 10vw;
+    position: relative;
+    width: clamp(200px, 50vw, 500px);
+    margin: 50px ;
+
   }
 
   .texto {
     position: inherit;
     display: block;
     min-width: 100px;
-    width: 40vw;
     z-index: 1;
     font-size: 1.2vw;
-
+    position: absolute;
+    margin: 0 70vh;
+    
     h1 {
       font-size: clamp(15px, 4vw, 50px);
     }
@@ -103,20 +109,31 @@ main {
     }
     p {
       font-size: clamp(15px, 3vw, 20px);
-      margin: 10px auto;
+      margin: 0;
+    }
+    h1 + p,
+    p + p {
+      margin-top: 4px;
     }
   }
 }
 
 .sections {
-  background-image: linear-gradient(to bottom, $cor-terciaria, $cor-primaria);
+  background-color: $cor-primaria;
   position: relative;
   z-index: 2;
+  
+  h1, p {
+    white-space: nowrap;
+    display: inline-block;
+    background-color: $cor-primaria;
+    padding: 5px;
+  }
+  
   p {
     text-align: justify;
   }
 }
-
 #sectionS {
   padding: 100px 0;
   min-height: 50vh;
@@ -151,33 +168,19 @@ main {
 }
 
 // ======= HELPERS =======
-.start   { display: flex; justify-content: flex-start; }
+.start   { display: flex; justify-content: flex-start; text-align: start; }
 .center  { display: flex; justify-content: center; text-align: center; }
-.end     { display: flex; justify-content: flex-end; text-align: end;}
+.end     { display: flex; justify-content: flex-end; text-align: right;}
 
 .color-1 { color: $cor-clara; }
 .color-2 { color: $cor-primaria; }
 .color-3 { color: $cor-secundaria; }
 
 // ======= RESPONSIVO =======
-@media screen and (max-width: 770px) {
-  nav {
-    justify-content: center;
-    position: absolute;
 
-    .logo {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
-
-    .item-nav {
-      display: none;
-    }
-  }
+@media screen and (max-width: 1100px) {
   .section{
     flex-direction: column;
-    text-align: center;
     .texto{
       font-size: 2.6vw;
       width: 70vw;
@@ -189,9 +192,32 @@ main {
     .end{
       justify-content: center;
     }
+    h1, p{
+      background-color: transparent;
+      display: block;
+      text-align: center;
+    }
     h1{
       text-align: center;
       font-size: 2vw;
     }
   }
+}
+
+@media screen and (max-width: 770px) {
+  nav {
+    .logo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+    ul {
+      justify-content: start;
+    }
+    .item-nav {
+      display: none;
+    }
+  }
+  
 }

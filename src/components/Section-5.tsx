@@ -6,8 +6,10 @@ function Section5() {
             </div>
             <div className="texto color-1">
                 <h1>Entretenimento</h1>
-                <p>Percebemos, cada vez mais, que o acompanhamento das preferências de consumo é uma das consequências de alternativas às soluções ortodoxas</p>
-                <p>Mais alguma coisa</p>
+                <p>Atividades de entretenimento com quizzes, e-sports,</p> 
+                <p>karaokê, Just Dance e espaços interativos para</p>
+                <p>diversão e integração dos participantes.</p>
+                {/* <p>Mais alguma coisa</p> */}
             </div>
         </section>
     )
