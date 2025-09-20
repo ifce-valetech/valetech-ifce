@@ -8,7 +8,7 @@ function Section2() {
                 <p>habilidades tecnológicas.</p>
             </div>
             <div className="imagem">
-                <img src="images/logo-preto.png" alt="" />
+                <img src="images/extras/competicao.png" alt="" />
             </div>
         </section>
     )

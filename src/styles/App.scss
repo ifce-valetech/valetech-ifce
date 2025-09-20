@@ -1,6 +1,7 @@
 // ======= Variáveis =======
 $cor-primaria: #773df9;
 $cor-secundaria: #1a162a;
+$cor-terciaria: #FAEE3C;
 $cor-clara: #f2f2f2;
 $cor-clara2: #cbcaca;
 
@@ -29,6 +30,7 @@ header {
   width: 100%;
   z-index: 1000;
 }
+
 .navbar {
   position: fixed;
   top: 0;
@@ -95,6 +97,7 @@ header {
     display: flex;
   }
 }
+
 // nav {
 //   position: sticky;
 //   top: 0;
@@ -177,15 +180,18 @@ main {
     h1 {
       font-size: clamp(15px, 4vw, 50px);
     }
+
     h2 {
       font-size: clamp(15px, 3vw, 20px);
     }
+
     p {
       font-size: clamp(15px, 3vw, 20px);
       margin: 0;
     }
-    h1 + p,
-    p + p {
+
+    h1+p,
+    p+p {
       margin-top: 4px;
     }
   }
@@ -195,9 +201,7 @@ main {
   // background-color: $cor-primaria;
   position: relative;
   z-index: 2;
-  h1{
-    font-size: clamp(20px, 5vw, 50px);
-  }
+
   h1,
   p {
     white-space: nowrap;
@@ -207,14 +211,28 @@ main {
     padding: 5px;
   }
 
+  h1 {
+    background-color: $cor-terciaria;
+    font-size: clamp(20px, 5vw, 50px);
+    color: rgba(0, 0, 0, 80%);
+  }
+
+  h1 {
+    background-color: $cor-terciaria;
+    font-size: clamp(20px, 5vw, 50px);
+    color: rgba(0, 0, 0, 80%);
+  }
+
   p {
     text-align: justify;
     font-size: clamp(14px, 2.6vw, 20px);
   }
 }
+
 #sectionS {
   padding: 100px 0;
   min-height: 50vh;
+
   h1 {
     font-size: clamp(30px, 4vw, 50px);
   }
@@ -248,44 +266,67 @@ main {
 }
 
 // ======= HELPERS =======
-.start{
+.start {
   display: flex;
   justify-content: flex-start;
   text-align: start;
   background-color: $cor-primaria;
 }
-#section2{
+
+#section2 {
   display: flex;
-  h1, p{
+
+  p {
     background-color: $cor-primaria !important;
   }
-  .start{
+
+  .start {
     background-color: transparent;
   }
+
+  h1 {
+    background-color: $cor-terciaria;
+  }
 }
-#section4{
+
+#section4 {
   display: flex;
-  h1, p{
+
+  p {
     background-color: $cor-primaria !important;
   }
-  .start{
+
+  .start {
     background-color: transparent;
   }
+
+  h1 {
+    background-color: $cor-terciaria;
+  }
 }
-#section6{
+
+#section6 {
   display: flex;
-  h1, p{
+
+  p {
     background-color: $cor-primaria !important;
   }
-  .start{
+
+  .start {
     background-color: transparent;
   }
+
+  h1 {
+    background-color: $cor-terciaria;
+  }
 }
+
 .center {
   display: flex;
   justify-content: center;
   text-align: center;
 }
+
 .end {
   display: flex;
   justify-content: flex-end;
@@ -295,9 +336,18 @@ main {
 .color-1 {
   color: $cor-clara;
 }
+
+.a-color {
+  color: $cor-clara;
+}
+.a-color:visited{
+
+  color: $cor-clara2;
+} 
 .color-2 {
   color: $cor-primaria;
 }
+
 .color-3 {
   color: $cor-secundaria;
 }
@@ -308,6 +358,7 @@ main {
   .section {
     padding: 50px 0;
     flex-direction: column;
+
     .texto {
       font-size: 2.6vw;
       width: 70vw;
@@ -315,14 +366,17 @@ main {
       text-align: center;
       max-width: 100%;
     }
+
     .imagem {
       order: -1;
       max-width: 100%;
     }
+
     .end {
       justify-content: center;
       max-width: 100%;
     }
+
     h1,
     p {
       background-color: transparent;
@@ -331,12 +385,31 @@ main {
       white-space: unset;
       word-wrap: break-word;
     }
+
     p {
       display: inline;
     }
+
     h1 {
       text-align: center;
       font-size: 2vw;
+    }
+    .a-color{
+      color: $cor-secundaria;
+    }
+    .a-color:visited{
+      color: #0f0d18;
+    }
+  }
+
+  #section2,
+  #section4,
+  #section6 {
+
+    h1,
+    p {
+      background-color: transparent !important;
+      color: rgba(0,0,0, 0.80);
     }
   }
 }
@@ -349,9 +422,11 @@ main {
       justify-content: center;
       position: relative;
     }
+
     ul {
       justify-content: start;
     }
+
     .item-nav {
       display: none;
     }

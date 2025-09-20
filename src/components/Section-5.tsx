@@ -2,7 +2,7 @@ function Section5() {
     return (
         <section className="section start" id="section5">
             <div className="imagem">
-                <img src="images/logo-branco.png" alt="" />
+                <img src="images/extras/entretenimento.png" alt="" />
             </div>
             <div className="texto color-1">
                 <h1>Entretenimento</h1>
