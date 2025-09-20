@@ -319,21 +319,21 @@ main {
   }
 }
 
-#section6 {
-  display: flex;
+// #section6 {
+//   display: flex;
 
-  p {
-    background-color: $cor-primaria !important;
-  }
+//   p {
+//     background-color: $cor-primaria !important;
+//   }
 
-  .start {
-    background-color: transparent;
-  }
+//   .start {
+//     background-color: transparent;
+//   }
 
-  h1 {
-    background-color: $cor-terciaria;
-  }
-}
+//   h1 {
+//     background-color: $cor-terciaria;
+//   }
+// }
 
 .center {
   display: flex;
@@ -430,8 +430,7 @@ main {
   }
 
   #section2,
-  #section4,
-  #section6 {
+  #section4 {
 
     h1,
     p {
