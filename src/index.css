@@ -124,10 +124,6 @@ main{
     width: 100%;
     display: flex;
     background-color: #773df9;
-    box-shadow: 
-    inset 100px 0 100px -100px #1a162a, /* esquerda */
-    inset -100px 0 100px -100px #1a162a, /* direita */
-    inset 0 -100px 100px -100px #1a162a;  /* baixo */
     position: relative;
     z-index: 2;
 }

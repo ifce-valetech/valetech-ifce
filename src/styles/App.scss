@@ -252,14 +252,9 @@ main {
   min-height: 200px;
   display: flex;
   background-color: $cor-primaria;
-  box-shadow:
-    inset 100px 0 100px -100px $cor-secundaria,
-    // esquerda
-    inset -100px 0 100px -100px $cor-secundaria,
-    // direita
-    inset 0 -100px 100px -100px $cor-secundaria; // baixo
   position: relative;
   z-index: 2;
+  font-size: clamp(10px, 1vw, 50px);
   color: $cor-clara;
   justify-content: center;
   align-items: center;
@@ -271,6 +266,11 @@ main {
         text-decoration: none;
       }
       align-items: center;
+    }
+    img {
+      min-width: 10px;
+      width: 5vw;
+      max-width: 30px;
     }
     position: absolute;
     flex-direction: column;
@@ -372,9 +372,9 @@ main {
 @media screen and (max-width: 1100px) {
   .footer{
     flex-direction: column;
-    padding: 100px 0;
+    padding: 50px 0;
     .redes{
-      margin-top: 100px;
+      margin-top: 50px;
       position: static;
       div{
         justify-content: center;
