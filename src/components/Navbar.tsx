@@ -23,7 +23,7 @@ function Navbar() {
         <a href="#section3"><p>Palestras</p></a>
         <a href="#section4"><p>Mostras Científicas</p></a>
         <a href="#section5"><p>Entretenimento</p></a>
-        <a href="https://www.even3.com.br/valetech-631126/"><p>Inscreva-se</p></a>
+        <a target="blank" href="https://www.even3.com.br/valetech-631126/"><p>Inscreva-se</p></a>
       </div>
 
     </nav>
