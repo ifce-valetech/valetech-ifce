@@ -109,7 +109,7 @@ main{
     position: inherit;
     display: block;
     min-width: 100px;
-    width: 30vw;
+    /* width: 30vw; */
     z-index: 1;
 }
 .section .texto h1 {
