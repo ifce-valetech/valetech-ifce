@@ -3,7 +3,7 @@ function SectionCenter() {
         <section className="section center section-down" id="sectionS">
             <div className="texto color-3 center">
                 <h1>Inscrições Abertas</h1>
-                <p className="inscreva-se">do dia 30 de setembro até 10 de outubro</p>
+                <p className="inscreva-se">30 de setembro até 10 de outubro</p>
                 <button><h2><a href="https://www.even3.com.br/valetech-631126/">Inscrever-se</a></h2></button>
             </div>
         </section>
