@@ -5,7 +5,7 @@ function Section5() {
                 <img src="images/extras/entretenimento.png" alt="" />
             </div>
             <div className="texto color-1">
-                <h1>Entretenimento</h1>
+                <h1 className="titleSection">Entretenimento</h1>
                 <p>Atividades de entretenimento com quizzes, e-sports,</p> 
                 <p>karaokê, Just Dance e espaços interativos para</p>
                 <p>diversão e integração dos participantes.</p>

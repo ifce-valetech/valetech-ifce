@@ -5,7 +5,7 @@ function Section3() {
                 <img src="images/extras/palestra.jpg" alt="" />
             </div>
             <div className="texto color-1">
-                <h1>Palestras</h1>
+                <h1 className="titleSection">Palestras</h1>
                 <p>Palestras que abordam tendências, inovações e</p> 
                 <p>desafios da tecnologia, oferecendo conhecimento</p>
                 <p>e inspiração para o futuro da computação</p>

@@ -5,7 +5,7 @@ function Section1() {
                 <img src="images/extras/workshop.jpg" alt="" />
             </div>
             <div className="texto color-1">
-                <h1>Workshops</h1>
+                <h1 className="titleSection">Workshops</h1>
                 <p>Aprenda na prática! Participe dos workshops da</p> 
                 <p>ValeTech 2025 e desenvolva novas habilidades</p> 
                 <p>em tecnologia</p>

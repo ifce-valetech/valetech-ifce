@@ -5,7 +5,7 @@
 //                 <h1 className="end">Maratona</h1><h1>de Programação</h1>
 //                 <p>Desafio de programação que estimula raciocínio </p>
 //                 <p>lógico, criatividade e trabalho em equipe.</p>
-//                 {/* <p>Participe do nível
+//                 {/* <p>.Participe do nível
 //                 <a className="a-color" href="https://forms.gle/Tc8jLtkKomheK4d16"> júnior </a>ou o
 //                 <a className="a-color" href="https://forms.gle/t5b51uGdT3FkuN1v5"> aberto </a></p> */}
 //             </div>
