@@ -148,6 +148,7 @@ header {
 
 // ======= MAIN =======
 main {
+  margin-top: 40px;
   position: relative;
   width: 100%;
   flex: 1; // ocupa espaço restante
@@ -232,7 +233,15 @@ main {
 #sectionS {
   padding: 100px 0;
   min-height: 50vh;
-
+  p {
+    display: block;     // garante que seja bloco
+    // white-space: nowrap;
+    margin: 0;          // remove qualquer margem herdada
+    padding: 5px 10px;
+    background-color: $cor-terciaria;
+    color: rgba(0,0,0,0.8);
+    // border-radius: 6px; // opcional
+  }
   h1 {
     font-size: clamp(30px, 4vw, 50px);
   }
@@ -316,6 +325,33 @@ main {
 
   h1 {
     background-color: $cor-terciaria;
+  }
+}
+
+.section-down {
+  display: flex;
+  justify-content: center; // centraliza horizontal
+  align-items: center;     // centraliza vertical
+  text-align: center;
+  padding: 50px 0;
+
+  .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; // espaçamento entre h1, h2 e p
+  }
+  button{
+    border: none;
+    background-color: $cor-primaria;
+    padding: 7px;
+    width: 200px;
+  }
+  a {
+    color: $cor-clara;
+    text-decoration: none;
+    padding: 5px;
+    // border-radius: 10px;
   }
 }
 

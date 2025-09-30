@@ -6,7 +6,9 @@ function SectionHeader() {
                 <div className="texto color-3 center">
                     <h1>Vale Tech</h1>
                     <h2>Tecnologia em Fluxo: Desafios e Perspectivas da Computação Contemporânea</h2>
-                    <p>15, 16 e 17 de outubro</p>
+                    <br />
+                    <strong><p>dias 15, 16 e 17 de outubro no IFCE - Aracati</p></strong>
+                
                 </div>
             </section>
         </>
